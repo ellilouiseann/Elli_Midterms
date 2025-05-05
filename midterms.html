@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Louise Ann Elli</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+
+  <style>
+ body {
+      background-color: #F9EFD5; 
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9EFD5;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+
+  .navbar button {
+    background-color: transparent;
+    color: #222;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .navbar button:hover {
+    background-color: #FCE5DC;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar button i {
+    font-size: 1.2rem;
+  }
+
+  
+  .welcome-container h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+  }
+
+  .welcome-container p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .btn-custom {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #FCE5DC;
+    background-color: #FfC0B5;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-custom:hover {
+    background-color: #FCE5DC;
+    color: #000;
+    transform: scale(1.05);
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .welcome-text {
+    animation: moveText 2s infinite ease-in-out;
+    font-size: 50px;
+  }
+
+
+    .subtext {
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      margin-top: 40px;
+      color: #222;
+    }
+
+    .emoji {
+      font-size: 24px;
+      vertical-align: middle;
+    }
+
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .btn-custom {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: 2px solid #F9EFD5;
+      background-color: #FCE5DC;
+      color: #333;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #F9EFD5;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    a {
+      color: #222;
+      text-decoration: underline;
+      margin: 0 5px;
+      font-weight: bold;
+    }
+
+
+    .note {
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #F9EFD5;
+      font-family: 'Inter', sans-serif;
+      color: #222;
+      text-align: center;
+    }
+    
+    .btn-custom {
+      background-color: #F9EFD5;
+      color: #000;
+      border: none;
+      margin: 5px;
+    }
+
+    .container {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    .text-content {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #F9EFD5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-content:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+    color: #222;
+    transition: color 0.3s ease;
+  }
+
+  .text-content h1:hover {
+    color: #FfC0B5;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+
+  .text-content p:hover {
+    color: #000;
+  }
+
+  .text-content button {
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid #FfC0B5;
+    background-color: #FfC0B5;
+    color: #FCE5DC;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+.text-content button:hover {
+    transform: scale(1.1);
+    background-color: #FfC0B5;
+    color: #000;
+  }
+
+  .image-content img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    border: 2px solid #F9EFD5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .image-content img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+
+    .text-content, .image-content {
+      flex: 1 1 400px;
+      padding: 20px;
+    }
+    .text-content h1, .text-content p, .text-content button {
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 100%;
+      max-width: 359px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    h1, h2, h3, h4{
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      font-size: 400;
+      margin-bottom: 50px;
+    }
+
+    .timeline .container .date {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    margin-right: 10px; 
+  }
+
+  .timeline .container h3 {
+    margin-top: 10px; 
+  }
+
+    .timeline {
+      position: relative;
+      padding: 40px 0;
+    }
+
+    .timeline .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      position: relative;
+    }
+
+    .timeline .container::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 10px;
+      background-color: #FfC0B5;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline .container.left::after {
+      left: 0;
+      transform: translateX(-50%);
+    }
+    .timeline .container.right::after {
+      left: 100%;
+      transform: translateX(-100%);
+    }
+    .timeline .container .date {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .timeline .container h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .timeline .container ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .timeline .container {
+      padding: 20px;
+      background-color: #F9EFD5;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    .timeline .container.left {
+      left: -50%;
+    }
+    .timeline .container.right {
+      left: 8%;
+    }
+    .timeline .container.left {
+      left: 0;
+    } 
+
+    .interactive-container {
+    padding: 20px;
+    background-color: #F9EFD5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .interactive-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .timeline .container {
+    transition: transform 0.3s ease;
+  }
+
+  .timeline .container:hover {
+    transform: translateY(-10px);
+  }
+  .dot {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .dot:hover {
+    background-color: #F9EFD5;
+    box-shadow: 0 0 15px #FCE5DC;
+  }
+   
+
+    .container.left, .container.right {
+      position: relative;
+      margin-bottom: 50px;
+      text-align: center;
+
+    }
+    .skills-section {
+      background-color: #F9EFD5;
+      padding: 30px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+
+    }
+    .skills-section div {
+      flex: 1 1 300px;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    
+   
+    .contact-container {
+      width: 90%;
+      max-width: 500px;
+      margin: 40px auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    input, textarea {
+      background-color: #000;
+      border: 2px solid #F9EFD5;
+      border-radius: 8px;
+      padding: 12px 15px;
+      color: #000;
+      font-size: 1rem;
+      resize: none;
+      outline: none;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #ccc;
+    }
+
+    .contact-container {
+      width: 90%;
+      max-width: 500px;
+      margin: 40px auto;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      background-color: #F9EFD5;
+      border: 2px solid #FCE5DC;
+      border-radius: 8px;
+      padding: 12px 15px;
+      color: black;
+      font-size: 1rem;
+      resize: none;
+      outline: none;
+    }
+   
+    input::placeholder, textarea::placeholder {
+      color: black;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #F9EFD5;
+      color: black;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #fcdce9;
+      color: #000;
+    }
+
+    footer {
+    padding: 10px;
+    background-color: #F9EFD5;
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+    }
+
+body{
+ background-color:#F5F5DC;
+        }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <button type="button">
+      <i class="fas fa-home"></i> Home
+    </button>
+    <button type="button">
+      <i class="fas fa-user"></i> About Me
+    </button>
+    <button type="button">
+      <i class="fas fa-graduation-cap"></i> Education
+    </button>
+    <button type="button">
+      <i class="fas fa-lightbulb"></i> Skills
+    </button>
+    <button type="button">
+      <i class="fas fa-envelope"></i> Contact
+    </button>
+  </div>
+  
+
+  <div class="welcome-container">
+    <h1 class="welcome-text">Hi, Welcome!<br>It's me Elli<br></h1>
+    <p class="details">
+      she loves mangoes <span class="emoji">🥭</span>, 
+      dogs <span class="emoji">🐶</span>,
+      beaches <span class="emoji">👙</span>,
+      coffee <span class="emoji">☕</span>,
+      makeup <span class="emoji">💄</span>,
+      and the small things that <span class="highlight">she values!</span>
+      <span class="note">YOLO: You Only Live Once!</span>
+    </p>
+    <p class="Contact">
+      scroll down to know more about her <span class="emoji">💋</span>
+    </p>
+    <div class="button-group">
+      <button type="button" class="btn btn-custom">About Her</button>
+      <button type="button" class="btn btn-custom">Contact Her</button>
+    </div>
+
+
+    <div class="container">
+      <div class="text-content">
+        <h1>About Her</h1>
+        <p>Hi! I am Louise Ann L. Elli, a second-year BSIT student under the program of Bachelor of Science in Information Technology at NU Lipa. This course was really not on my bucket list but hey! I am starting to love it now. I am passionate in creating a project that is user-friendly and visually appealing.</p>
+        <p>Additionally, I am a perfectionist, I love organizing things. And one thing I truly believe in life is that we should never stop creating and learning. Lastly, I love to sit and create with some coffee & conversations.</p>
+    
+        <button type="button" class="btn">
+          <i class="fab fa-instagram"></i>
+        </button>
+        <button type="button" class="btn">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+        <button type="button" class="btn">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </div>
+    
+      <div class="image-content">
+        <img src="Media.jpg" alt="Profile Picture">
+      </div>
+    </div>
+
+  <h2>Education</h2>
+  <div class="timeline">
+    <div class="container left">
+      <div class="dot"></div>
+      <div class="date"> 2023 - 2025 </div>
+      <h3> College  </h3>
+      <ul>
+        <li>•National University Lipa</li>
+        <li>•Bachelor of Science in Information Technology</li>
+        <li>•Dean's Lister A.Y. 2023-2024</li>
+        <li>•DICT Participant Year 2023-2024</li>
+      </ul>
+    </div>
+
+    <div class="container right">
+      <div class="dot"></div>
+      <div class="date"> 2022 - 2023 </div>
+      <h3> Senior High School  </h3>
+      <ul>
+        <li>•San Isidro Integrated National High School</li>
+        <li>•Humanities and Social Sciences</li>
+        <li>•With Honors</li>
+      </ul>
+    </div>
+
+    <div class="container left">
+      <div class="dot"></div>
+      <div class="date"> 2017 - 2021 </div>
+      <h3> Junior High School  </h3>
+      <ul>
+        <li>•San Isidro Integrated National High School</li>
+        <li>•Humanities and Social Sciences</li>
+        <li>•With Honors</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <h3>Skills</h3>
+  <div class="skills-section">
+    <div>
+      <i class="fas fa-paint-brush" style="font-size: 30px; color: #FfC0B5;"></i>
+      <h3>Graphic Design</h3>
+      <p>Combining creativity, strategy, and aesthetics to make websites visually appealing. As a sophomore, I am willing to learn and practice for more future projects.</p>
+    </div>
+
+    <div>
+      <i class="fas fa-users" style="font-size: 30px; color: #FfC0B5;"></i>
+      <h3>Leadership Skills</h3>
+      <p>Leadership is about inspiring, guiding, and empowering others towards one goal. I believe that good leaders doesn't tell you what to do unless, they show you how it is done.</p>
+    </div>
+
+    <div>
+      <i class="fas fa-comment-dots" style="font-size: 30px; color: #FfC0B5;"></i>
+      <h3>Communication Skills</h3>
+      <p>Strong communication builds understanding, collaboration, and impact. I love expressing thoughts through writing.</p>
+    </div>
+  </div>
+
+  <div class="contact-container">
+    <h4>Contact Me</h4>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Phone Number" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy;Copyright: Louise Ann Elli | 2025 </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
